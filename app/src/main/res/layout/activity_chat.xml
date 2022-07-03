@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_color">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_back_light_10"
+            android:src="@drawable/arrow_back" />
+
+        <TextView
+            android:id="@+id/user_receive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:text="Pesan"
+            android:textColor="#FFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/rv_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linear_layout"
+        android:layout_below="@+id/rl_header"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp">
+
+        <EditText
+            android:id="@+id/et_chatbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Tulis Pesan"
+            android:layout_weight="90"
+            android:layout_marginLeft="16dp"
+            android:padding="16dp"
+            android:maxLines="3"
+            android:background="@drawable/message_box"/>
+
+        <ImageView
+            android:id="@+id/iv_send_button"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:src="@drawable/sendmessage"
+            android:layout_weight="10"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/round_back_theme_1000"
+            android:layout_gravity="center_vertical"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

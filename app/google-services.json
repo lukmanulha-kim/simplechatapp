@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "862309548086",
+    "project_id": "simple-chat-app-5ce05",
+    "storage_bucket": "simple-chat-app-5ce05.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:862309548086:android:f3d15a33945c6a60d91897",
+        "android_client_info": {
+          "package_name": "com.lukman.simplechatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "862309548086-t435l3tjet6mh9kikn51bh05idki3r8p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfMp28JHGvxOC_whBqfuTecwC_j0MfpyY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "862309548086-t435l3tjet6mh9kikn51bh05idki3r8p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
